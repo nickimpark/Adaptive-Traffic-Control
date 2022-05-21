@@ -15,7 +15,7 @@ class VehicleDetector:
         self.classes = None
         self.colors = None
         self.white_list = None
-        # Initialize the model
+        # Initialize the model, load these files for YOLOv3-320 from: https://pjreddie.com/darknet/yolo/
         self.modelConfiguration = 'yolov3.cfg'
         self.modelWeights = 'yolov3.weights'
         self.net = cv2.dnn.readNetFromDarknet(self.modelConfiguration, self.modelWeights)
